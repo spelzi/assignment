@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Card from "react-bootstrap/Card";
+import Name from "./components/Name";
+import Price from "./components/Price";
+import Description from "./components/Description";
+import Url from "./components/Url";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <center>
+      <div class="card" style={{ width: "18rem" }}>
+        <Url />
+        <div class="card-body">
+          <Name />
+          <Description />
+          <Price />
+        </div>
+      </div>
+    </center>
   );
 }
 
