@@ -2,7 +2,7 @@ import React from "react";
 import { products } from "../Product";
 
 
-
+// import products price to export to card div 
 const Price = () => {
 
    
